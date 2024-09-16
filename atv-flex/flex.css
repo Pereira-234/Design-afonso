@@ -1,0 +1,80 @@
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+header{
+    height: 100vh;
+    background-color: rgb(0, 102, 54);
+    width: 14vw;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+
+.cabecalho{
+    width: 80%;
+    height: 2em;
+    margin-left: 1em;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: stretch;
+        align-content: stretch;   
+}
+
+.acontainer{
+    margin-left: 23vw;
+    height: 70vh;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#filha{
+    border: 1px solid rgb(177, 177, 177) ;
+    background-color: rgb(236, 236, 236) ;
+    margin: 0 auto;
+    height: 13em;
+    width: 10em;
+    min-width: 8em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#r{
+    margin-left: 17vw;
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+ol{
+    list-style: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    justify-content: space-around;
+}
+
+form{
+    height: 1.3em;
+    display: flex;
+    flex-direction: row;
+}
+
+svg{
+    color: rgb(11, 65, 27);
+    
+}
