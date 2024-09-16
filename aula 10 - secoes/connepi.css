@@ -1,0 +1,35 @@
+*{ /* seleciona todas as marcações */ 
+    margin: 0;
+    padding: 0;
+}
+header{
+    text-align: center;
+}
+
+header h1{
+    background-color: rgb(42, 131, 143);
+    padding: 2em;
+    text-align: center;
+}
+header nav{
+    background-color: rgb(8, 57, 63);
+    padding: 2em;
+}
+header li{
+    display: inline-block;
+}
+header a{
+    color: white;
+}
+main section{
+    background-color: rgb(235, 144, 84);
+    width: 10em;
+    height: 15em;
+    border-radius: 1em;
+    padding: 2em;
+    margin: 2em;
+    float: left;
+}
+h1{
+    color: rgb(8, 57, 63);
+}
