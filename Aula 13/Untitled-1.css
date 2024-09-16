@@ -1,0 +1,30 @@
+div#container{
+    max-width: 70em;
+    margin: 0 auto;
+    background-color:rgb(157, 232, 255);
+}
+
+section div {
+    background-color: rgb(157, 232, 255);
+    padding: 1em;
+    display: flex;
+
+    div{
+        border: 1px solid black;
+        padding: 0.5em;
+        margin: 0.5em;
+        width: 30em;
+        height: 30em;
+        box-shadow: 0.5em 0.5em 0.3em rgb(238, 250, 255);
+        border-radius: 2em;
+
+    }
+}
+section p{
+    background-color: rgb(127, 208, 255);
+}
+span{
+    background-color: rgb(155, 184, 211);
+    display: inline-block;
+    width: 7em;
+}
