@@ -1,0 +1,26 @@
+@media screen and (max-width:1000px){
+    body{
+        background-color: aqua;
+    }
+    button{
+        display: none;
+}
+
+@media screen and (max-width:800px){
+    body{
+        background-color: red;
+    }
+    button{
+        display: none;
+    }
+}
+
+@media screen and (max-width:500px){
+    body{
+        background-color: blue;
+    }
+    ul{
+        display: none;
+    }
+
+}
