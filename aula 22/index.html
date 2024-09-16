@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GRID</title>
+    <style>
+        main{
+            
+            margin: 0 auto;
+            max-width: 50em;
+            display: grid; /* o grid é sempre aplicado no container */
+            grid-template-rows: 10em 10em 20em; /* esses valores são referentes às linhas de elementos. cada um é o tamanho de uma das linhas, assim, a quantidade de valores tem que ser igual a de linhas */
+            grid-template-columns: 1fr 3fr 1fr; /* fr = fração. cada parte vai virar uma fração da parte geral. cada fr se relaciona a uma coluna. */
+            grid-template-areas: 
+                "a b b"
+                "a d e"
+                "c c e"
+                
+            ;
+            gap: 2em;
+        }
+        main div{
+            background-color: cadetblue;
+            padding: 2em;
+            border: 1px solid black;
+            overflow: auto; /* serve para botar uma barra de rolagem na div quando se tem um texto maior que a altura estabelecida */
+        }
+        div.area-a{
+            grid-area: a;
+        }
+        div.area-b{
+            grid-area: b;
+        }
+        
+        div.area-c{
+            grid-area: c;
+        }
+        div.area-d{
+            grid-area: d;
+        }
+        div.area-e{
+            grid-area: e;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="area-a"><p>spider man</p></div>
+        <div class="area-b"><p>iron man</p></div>
+        <div class="area-c"><p>hulk
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis alias aperiam voluptatem, velit exercitationem sit? Necessitatibus beatae est vero aut quisquam aliquam veniam similique, minus facilis quam, consequatur dolorum voluptas.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis alias aperiam voluptatem, velit exercitationem sit? Necessitatibus beatae est vero aut quisquam aliquam veniam similique, minus facilis quam, consequatur dolorum voluptas.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis alias aperiam voluptatem, velit exercitationem sit? Necessitatibus beatae est vero aut quisquam aliquam veniam similique, minus facilis quam, consequatur dolorum voluptas.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis alias aperiam voluptatem, velit exercitationem sit? Necessitatibus beatae est vero aut quisquam aliquam veniam similique, minus facilis quam, consequatur dolorum voluptas.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis alias aperiam voluptatem, velit exercitationem sit? Necessitatibus beatae est vero aut quisquam aliquam veniam similique, minus facilis quam, consequatur dolorum voluptas.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis alias aperiam voluptatem, velit exercitationem sit? Necessitatibus beatae est vero aut quisquam aliquam veniam similique, minus facilis quam, consequatur dolorum voluptas.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis alias aperiam voluptatem, velit exercitationem sit? Necessitatibus beatae est vero aut quisquam aliquam veniam similique, minus facilis quam, consequatur dolorum voluptas.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis alias aperiam voluptatem, velit exercitationem sit? Necessitatibus beatae est vero aut quisquam aliquam veniam similique, minus facilis quam, consequatur dolorum voluptas.
+        </p></div>
+        <div class="area-d"><p>thor</p></div>
+        <div class="area-e"><p>hawkeye</p></div>
+    </main>
+    
+</body>
+</html>
