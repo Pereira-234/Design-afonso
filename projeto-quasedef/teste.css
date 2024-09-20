@@ -1,0 +1,154 @@
+body{
+    margin: 0 auto;
+}
+
+div.container#time {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    gap: 4em;
+    grid-template-columns: 40em 40em; 
+    grid-template-rows: 20em 20em;
+    grid-template-areas: 
+        "t a"
+        "i x"; 
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+div.t {
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    grid-area: t;
+    overflow-y: auto; /* barra de rolagem vertical */
+    align-items: center;
+}
+
+ul.jogadores {
+    max-height: 100%; /* altura da lista do tamanho da div */
+    list-style-type: none; 
+    margin-right: 40px;
+}
+
+
+div.x {
+    grid-area: x;
+}
+
+div.i {
+    grid-area: i;
+}
+
+div.a {
+    grid-area: a;
+}
+
+div.x, div.t { 
+    background-color: #F5F5F5;
+    width: 100%; 
+    height: 100%;
+    border-radius: 5%;
+    font-size: large;
+    text-align: center;
+}
+
+form.jogadores {
+    display: flex;
+    flex-direction: column;
+}
+
+ul.jogadores {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="submit"] {
+    width: 80px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: #461b1b; 
+    color: white; 
+
+}
+
+
+
+li#elenco{
+    font-weight: bold;
+}
+
+ol{
+    margin-right: 10em;
+    height: 65%;
+    width: 20%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.container#paginicial{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+div.jogos{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+table {
+    width: 75em;
+    height: 25em;
+    border-collapse: collapse;
+    margin-top: 5%;
+    margin-left:25px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+th {
+    background-color: #4b1d1d;
+    color: white;
+}
+
+td {
+    background-color: #F5F5F5;
+}
+
+img#logonba{
+    margin-top: 2.5%;
+    margin-left: 7%;
+}
+#trofeunba{
+    margin-top: 2.5%;
+    margin-right: 7%;
+}
+
+@media (max-width: 768px) {
+
+    img#logonba, #trofeunba{
+        display: none;
+    }
+    
+}
