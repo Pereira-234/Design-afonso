@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0; padding: 0;
+        }
+        body{height: 100vh;}
+        main{
+            position: absolute;
+            background-color: aqua;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main></main>
+    <script>
+        document.onmousemove = function(){
+
+            let x = event.clientX;
+            let y = event.clientY;
+            console.log(event.clientX);
+            let rx = window.screen.availHeight;
+            let ry = window.screen.availWidth;
+            let px = Math.round((x/rx)*225); /* math.round serve para arredondar para um numero inteiro */
+            let py = Math.round((y/ry)*225);
+
+            document.querySelector("main").style.backgroundColor = `rgb(178,${px}, ${py})`;
+        }
+
+    </script>
+</body>
+</html>

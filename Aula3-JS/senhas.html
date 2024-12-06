@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <label>
+            Senha:
+            <input type="password" id="senha">
+        </label><br>
+        <label>
+            Confirmar senha:
+            <input type="password" id="confsenha">
+        </label><br>
+        <button id="verificar">VERIFICAR</button>
+    
+    <script>
+        let senha = document.querySelector('#senha');
+        let confsenha = document.querySelector('#confsenha');
+        let verificar = document.querySelector('#verificar');
+
+        verificar.onclick = function(){
+            if(senha.value == confsenha.value){
+                senha.style.border = "2px solid green";
+                confsenha.style.border = "2px solid green";
+                return true;
+            }
+            else{
+                senha.style.border = "2px solid red";
+                confsenha.style.border = "2px solid red";
+                return true;
+            }
+        }
+    </script>
+</body>
+</html>

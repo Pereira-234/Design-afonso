@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div id="tc"></div>
+    <script>
+        document.onkeydown = function(e){  /* ao apertar uma tecla do teclado (onkeydown), ele vai passar pelos eventos seguintes. */
+            document.querySelector('#tc').innerHTML = 
+            document.querySelector('#tc').textContent +
+            String.fromCharCode(e.keyCode); 
+            return true;
+        }
+    </script>
+</body>
+</html>
